@@ -26,9 +26,35 @@
 .primecolor{
     background-color: #6C63FF;
 }
+.primetextcolor:hover{
+    color: #6C63FF;
+}
 .fa{
     color: #6C63FF;
     padding:4px;
     border-radius: 5px;
     font-size: 30px;
+}
+
+.maincontainer{
+    position: relative;
+}
+.thecard{
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.thecard:hover{
+    transform: rotateY(180deg);
+}
+.frontcard{
+    position: absolute;
+    backface-visibility: hidden;
+}
+.backcard{
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
 }
